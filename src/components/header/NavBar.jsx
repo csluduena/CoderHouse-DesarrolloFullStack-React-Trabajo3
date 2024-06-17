@@ -22,7 +22,7 @@ export const NavBar = () => {
     return (
         <nav style={{ display: 'flex', fontSize: '30px', justifyContent: 'space-between', alignItems: 'center', padding: '10px 20px', backgroundColor: '#333333', color: 'white' }}>
             <div className='mainTitleCFG'>
-                <NavLink to="/" style={{ textDecoration: 'none', fontSize: '30px', fontFamily: 'MuseoSans-900' }}>GuitarStore</NavLink>
+                <NavLink to="/" style={{ fontSize: '30px', fontFamily: 'MuseoSans-900' }}>GuitarStore</NavLink>
             </div>
 
             <div style={{ backgroundColor: '#333333', display: 'flex', alignItems: 'center' }}>

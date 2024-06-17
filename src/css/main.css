@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "dienasty";
-    src: url(/src/assets/assets/fonts/dienasty.otf);
+    src: url(/src/assets/fonts/dienasty.otf);
 }
 
 @font-face {
@@ -91,23 +91,10 @@ a:hover {
     margin: 0 auto;
 }
 
-.productos-grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-}
-
 .producto {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.pokemons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: 3rem;
 }
 
 .grid {
@@ -196,12 +183,6 @@ hr {
     font-size: 20px;
 }
 
-.navRoutes {
-    color: red;
-    font-family: "MuseoSans-900";
-    word-spacing: '45px';
-}
-
 .mainTitleCFG {
     background-color: #333;
     color: #891a1a;
@@ -213,7 +194,7 @@ hr {
 }
 
 .navRoutes {
-    color: red;
+    /*color: red;*/
     font-family: "MuseoSans-900";
     word-spacing: '45px';
 }
@@ -278,3 +259,10 @@ hr {
     text-align: center;
 }
 
+
+
+.textFooter {
+    color: white;
+    font-size: 20px;
+    margin-bottom: -0%;
+}

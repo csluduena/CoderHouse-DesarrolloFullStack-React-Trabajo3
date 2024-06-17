@@ -7,9 +7,12 @@ export const ItemList = ({ productos }) => {
         <div className="productos-grilla">
             {
                 productos.length > 0 ?
-                    productos.map(producto => {
-                        return <Item key={producto.id} producto={producto} />
-                    })
+                    productos.map((producto) => (
+                        <div key={producto.id} className="navRoutes">
+                            <Item producto={producto} />
+                            <hr className='hrCfg' />
+                        </div>
+                    ))
                     : <p>Loading...</p>
             }
         </div>
