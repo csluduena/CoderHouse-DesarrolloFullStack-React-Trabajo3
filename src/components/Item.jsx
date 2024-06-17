@@ -12,8 +12,10 @@ export const Item = ({ producto }) => {
             <img className='imgCfg' src={producto.imagen} />
             <p className='priceCFG'>Price ${producto.precio}</p>
             <p className='productDesCFG'>{producto.descripcion}</p>
-            <Link to={`/item/${producto.id}`} className='moreInfo'>→ More Info ←</Link>
-            <button onClick={() => agregarAlCarrito(producto)} className='add2Cart'>Add to Cart</button>
+            <div className="buttonsStore">
+                <Link to={`/item/${producto.id}`} className='moreInfo'>More Info</Link>
+                <button onClick={() => agregarAlCarrito(producto)} className='add2Cart'>Add to Cart</button>
+            </div>
         </div>
     )
 }

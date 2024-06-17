@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+.body {
+    margin: 8px;
+}
+
 :root {
-    background-color: #a5a5a5;
+    background-color: #d6d6d6;
 }
 
 @font-face {
@@ -134,7 +138,8 @@ a {
 
 .productNomCFG {
     font-size: 35px;
-    margin-bottom: -3%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .colorPrice {
@@ -160,21 +165,52 @@ hr {
 
 .priceCFG {
     color: #164212;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-size: 30px;
-    margin-bottom: 0%;
+}
+
+.buttonsStore {
+    margin-top: 1em;
 }
 
 .moreInfo {
-    font-size: 25px;
+    font-size: 18px;
     color: white;
     background-color: #333;
     padding: 10px;
     border-radius: 50%;
     border: 5px solid #8b8585;
+    font-family: "MuseoSans-900";
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 0.5em;
+}
+
+.moreInfo:hover {
+    color: rgb(0, 0, 0);
+    background-color: #8b8585;
+    border: 5px solid #333;
+}
+
+.add2Cart:hover {
+    color: rgb(0, 0, 0);
+    background-color: #8b8585;
+    border: 5px solid rgb(252, 237, 18);
 }
 
 .add2Cart {
-    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "MuseoSans-900";
+    color: rgb(252, 237, 18);
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid #8b8585;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
 }
 
 .carrito {
@@ -254,6 +290,7 @@ hr {
 
 .greetingCFG {
     font-family: "dienasty";
+    margin-top: 1.5rem;
     font-size: 45px;
     color: #891a1a;
     text-align: center;
