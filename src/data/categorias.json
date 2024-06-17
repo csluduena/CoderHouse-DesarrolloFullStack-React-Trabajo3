@@ -1,0 +1,18 @@
+[
+    {
+        "id": "SG",
+        "nombre": "SG"
+    },
+    {
+        "id": "Les-Paul",
+        "nombre": "LES-PAUL"
+    },
+    {
+        "id": "Stratocaster",
+        "nombre": "STRATOCASTER"
+    },
+    {
+        "id": "Flying-V",
+        "nombre": "FLYING-V"
+    }
+]

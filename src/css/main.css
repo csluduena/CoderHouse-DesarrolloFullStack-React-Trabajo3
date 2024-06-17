@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    background-color: #a5a5a5;
+}
+
+@font-face {
+    font-family: "dienasty";
+    src: url(/src/assets/assets/fonts/dienasty.otf);
+}
+
+@font-face {
+    font-family: "MuseoSans-900";
+    src: url(/src/assets/fonts/MuseoSans-900.otf);
+}
+
+.guitarStyle {
+    width: 80%;
+    margin-left: 10%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.keychainify-checked {
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+} */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: .5rem;
+}
+
+.nav-link {
+    color: red;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.products-container {
+    min-height: 30vh;
+    display: grid;
+    place-items: center;
+}
+
+.oscuro {
+    background-color: black !important;
+}
+
+.item-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.productos-grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+
+.grid {
+    display: grid;
+}
+
+footer {
+    margin-top: 30rem;
+}
+
+a {
+    color: white;
+}
+
+.verde {
+    color: green;
+}
+
+.rojo {
+    color: red;
+}
+
+.bg-blanco {
+    background-color: white;
+}
+
+.bg-gris {
+    background-color: gray;
+}
+
+.productDesCFG {
+    text-align: center;
+    font-size: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.productNomCFG {
+    font-size: 35px;
+    margin-bottom: -3%;
+}
+
+.colorPrice {
+    color: #164212;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 4em;
+}
+
+hr {
+    color: black;
+}
+
+.hrCfg {
+    font-size: 30px;
+}
+
+.imgCfg {
+    width: 70%;
+    margin-left: 6%;
+    margin-top: 4%;
+}
+
+.priceCFG {
+    color: #164212;
+    font-size: 30px;
+    margin-bottom: 0%;
+}
+
+.moreInfo {
+    font-size: 25px;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid #8b8585;
+}
+
+.add2Cart {
+    margin-top: 1rem;
+}
+
+.carrito {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.navRoutes {
+    color: red;
+    font-family: "MuseoSans-900";
+    word-spacing: '45px';
+}
+
+.mainTitleCFG {
+    background-color: #333;
+    color: #891a1a;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.mainTitleCFG:hover {
+    color: #d50808;
+}
+
+.navRoutes {
+    color: red;
+    font-family: "MuseoSans-900";
+    word-spacing: '45px';
+}
+
+.popup-container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.popup {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.textFooter {
+    color: white;
+    font-size: 20px;
+    margin-bottom: -0%;
+}
+
+.botonBuy {
+    font-size: 25px;
+    margin: 2%;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.greetingCFG {
+    font-family: "dienasty";
+    font-size: 45px;
+    color: #891a1a;
+    text-align: center;
+}
+
