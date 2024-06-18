@@ -1,6 +1,6 @@
 # Proyecto de React.js - Tienda de Guitarras
 
-Este es el tercer proyecto de React.js realizado por **Sebastián Ludueña** para la carrera de **Desarrollo Full Stack** en **CoderHouse**. El proyecto es una tienda de guitarras donde se pueden visualizar diferentes productos, filtrarlos por categorías y ver los detalles de cada uno.
+Este es el proyecto final de React.js realizado por **Sebastián Ludueña** como parte de la carrera de **Desarrollo Full Stack** en **CoderHouse**.
 
 ## Herramientas Utilizadas
 
@@ -13,6 +13,7 @@ Este es el tercer proyecto de React.js realizado por **Sebastián Ludueña** par
 7. **HTML**: Para la estructura básica de la aplicación.
 8. **JavaScript**: Para la lógica de la aplicación.
 9. **Vite**: Como el servidor de desarrollo para una mejor experiencia de desarrollo con React.
+10. **Firebase**: Para el almacenamiento de datos y autenticación de usuarios.
 
 ## Estructura del Proyecto
 
@@ -30,7 +31,10 @@ Este es el tercer proyecto de React.js realizado por **Sebastián Ludueña** par
 - **Visualización de Productos**: Los productos se muestran en una grilla con sus imágenes, nombres, precios y descripciones.
 - **Filtrado por Categorías**: Los productos pueden ser filtrados por diferentes categorías.
 - **Detalle del Producto**: Al hacer clic en un producto, se muestra una vista detallada con más información.
-- **Notificación de Producto Añadido**: Al hacer clic en el botón "Buy Now", aparece una notificación flotante que indica que el producto ha sido añadido al carrito.
+- **Carrito de Compras**: Implementación de un carrito de compras donde se pueden añadir y eliminar productos.
+- **Gestión de Estado con Context**: Utilización de Context API para la gestión del estado global de la aplicación.
+- **Eventos y Técnicas de Rendering**: Implementación de eventos y técnicas de rendering optimizado para mejorar la experiencia del usuario.
+- **Firebase**: Integración de Firebase para el almacenamiento de datos y autenticación de usuarios.
 
 ## Instalación
 
@@ -42,10 +46,19 @@ Este es el tercer proyecto de React.js realizado por **Sebastián Ludueña** par
 3. Iniciar la aplicación:
     ```npm run dev```
 
+## Despliegue en Netlify
+
+Este proyecto está desplegado en [Netlify](https://guitarstore-react.netlify.app).
+
 ## Autor
 
 Carlos Sebastián Ludueña
 
 Este proyecto fue realizado como parte del curso de **Desarrollo Full Stack** en **CoderHouse**.
+
+Puedes encontrarme en:
+
+- LinkedIn: [Carlos Sebastián Ludueña](https://www.linkedin.com/in/csluduena/)
+- GitHub: [csluduena](https://github.com/csluduena)
 
 ¡Gracias por revisar mi proyecto! Espero que les guste y cualquier feedback será bien recibido.
