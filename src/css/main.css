@@ -86,9 +86,6 @@ a:hover {
     place-items: center;
 }
 
-.oscuro {
-    background-color: black !important;
-}
 
 .item-list-container {
     max-width: 1000px;
@@ -105,8 +102,9 @@ a:hover {
     display: grid;
 }
 
-footer {
-    margin-top: 30rem;
+.productoPrecioStyle {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 a {
@@ -175,6 +173,7 @@ hr {
 }
 
 .moreInfo {
+    cursor: pointer;
     font-size: 18px;
     color: white;
     background-color: #333;
@@ -294,12 +293,4 @@ hr {
     font-size: 45px;
     color: #891a1a;
     text-align: center;
-}
-
-
-
-.textFooter {
-    color: white;
-    font-size: 20px;
-    margin-bottom: -0%;
 }

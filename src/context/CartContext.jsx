@@ -3,8 +3,14 @@ import { createContext, useEffect, useState } from "react";
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
+    const [carrito, setCarrito] = useState(() => {
+        const savedCart = localStorage.getItem('carrito');
+        return savedCart ? JSON.parse(savedCart) : [];
+    });
 
-    const [carrito, setCarrito] = useState([]);
+    useEffect(() => {
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+    }, [carrito]);
 
     const agregarAlCarrito = (producto) => {
         setCarrito([...carrito, producto]);

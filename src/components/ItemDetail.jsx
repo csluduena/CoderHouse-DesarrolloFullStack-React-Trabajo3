@@ -17,7 +17,7 @@ export const ItemDetail = ({ producto }) => {
     const { agregarAlCarrito } = useContext(CartContext);
 
     return (
-        <div className="producto">
+        <div className="producto producto2">
             <h1 className='productNomCFG'>{producto.nombre}</h1>
             <img className='imgCfg' src={producto.imagen} />
             <p className='priceCFG'>Price ${producto.precio}</p>

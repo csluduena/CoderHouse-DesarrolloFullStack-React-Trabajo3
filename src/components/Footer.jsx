@@ -5,11 +5,11 @@ const Footer = () => {
     return (
         <footer style={{ backgroundColor: '#333', color: 'white', padding: '20px', textAlign: 'center' }}>
             <div>
-                <NavLink to="/" style={{ fontSize: '30px', margin: '0 10px', color: 'white', textDecoration: 'none' }}>
-                    Home
+                <NavLink to="/" style={{ fontSize: '30px', margin: '0 10px', color: 'white', textDecoration: 'none', fontFamily: "MuseoSans-900" }}>
+                    GuitarStore
                 </NavLink>
                 {categories.map(categoria => (
-                    <NavLink key={categoria.id} to={`/category/${categoria.id}`} style={{ fontSize: '30px', margin: '0 10px', color: 'white', textDecoration: 'none' }}>
+                    <NavLink key={categoria.id} to={`/category/${categoria.id}`} style={{ fontSize: '30px', margin: '0 10px', color: 'white', textDecoration: 'none', fontFamily: "MuseoSans-900" }}>
                         {categoria.nombre}
                     </NavLink>
                 ))}

@@ -27,3 +27,5 @@ export const Suma = () => {
         </div>
     )
 }
+
+//no me acuerdo exactamente la funsión de este componente. Se queda como está, que así se hizo en clase.
