@@ -45,7 +45,7 @@ const Carrito = () => {
                         <h2 className='totalPrice'>Total: <span className='totalAmount'>${calcularTotal()}</span></h2>
                         <div className="botonesCarrito">
                             <button className='borrarBoton moreInfo' onClick={vaciarCarrito}>Delete Cart</button>
-                            <Link to="/finalizar-compra" className='add2Cart'>Order Now</Link>
+                            <Link to="/buyout" className='add2Cart'>Order Now</Link>
                         </div>
                     </> :
                     <h2 className='emptyCartMessage'>Cart Empty</h2>

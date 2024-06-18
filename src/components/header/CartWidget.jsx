@@ -8,7 +8,7 @@ export const CartWidget = () => {
     const { calcularCantidad } = useContext(CartContext);
 
     return (
-        <Link className="carrito" to="/carrito">
+        <Link className="carrito" to="/cart">
             <CartCheck color="white" /> {calcularCantidad()}
         </Link>
     )

@@ -25,9 +25,9 @@ function App() {
                     <Route path="/" element={<ItemListContainer greeting="Welcome To GuitarStore" />} />
                     <Route path="/category/:categoryId" element={<ItemListContainer greeting="Welcome To GuitarStore" />} />
                     <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-                    <Route path="/carrito" element={<Carrito />} />
+                    <Route path="/cart" element={<Carrito />} />
                     <Route path="/suma" element={<Suma />} />
-                    <Route path="/finalizar-compra" element={<Checkout />} />
+                    <Route path="/buyout" element={<Checkout />} />
                     <Route path="/cargar-productos" element={<CargarProductos />} />
                     <Route path="/*" element={<NotFound />} />
                 </Routes>
