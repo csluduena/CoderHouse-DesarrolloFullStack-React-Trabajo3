@@ -9,7 +9,7 @@
 }
 
 :root {
-    background-color: #d6d6d6;
+    background-color: #bbbbbb;
 }
 
 @font-face {
@@ -32,9 +32,9 @@ li {
     list-style: none;
 }
 
-.keychainify-checked {
-    background-color: #333;
-}
+/* .keychainify-checked {
+    background-color: #333333a5;
+} */
 
 a {
     text-decoration: none;
@@ -220,7 +220,7 @@ hr {
 }
 
 .mainTitleCFG {
-    background-color: #333;
+    /* background-color: #333333a5; */
     color: #891a1a;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
@@ -237,12 +237,13 @@ hr {
 
 .popup-container {
     position: fixed;
-    right: 20px;
+    left: 20px;
     bottom: 20px;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
     gap: 10px;
+    font-size: 15px;
 }
 
 .popup {
@@ -295,3 +296,4 @@ hr {
     color: #891a1a;
     text-align: center;
 }
+

@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import { CartWidget } from './CartWidget';
-import '../../css/main.css'; // Asegúrate de importar tu archivo CSS
+import '../../css/main.css';
 
 export const NavBar = () => {
     let [categories, setCategories] = useState([]);
@@ -19,14 +19,14 @@ export const NavBar = () => {
     }, [])
 
     return (
-        <nav style={{ display: 'flex', fontSize: '30px', justifyContent: 'space-between', alignItems: 'center', padding: '10px 20px', backgroundColor: '#333333', color: 'white' }}>
+        <nav className="navbar">
             <div className='mainTitleCFG'>
-                <NavLink to="/" style={{ fontSize: '30px', fontFamily: 'MuseoSans-900' }}>GuitarStore</NavLink>
+                <NavLink to="/" className="navbar-title">GuitarStore</NavLink>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div className="navbar-categories">
                 {categories.map((category) => (
-                    <NavLink key={category.id} to={`/category/${category.id}`} className="navRoutes" style={{ fontSize: '30px', margin: '0 10px', textDecoration: 'none' }}>
+                    <NavLink key={category.id} to={`/category/${category.id}`} className="navRoutes">
                         {category.nombre}
                     </NavLink >
                 ))}
@@ -35,3 +35,4 @@ export const NavBar = () => {
         </nav>
     )
 }
+

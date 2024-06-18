@@ -1,0 +1,38 @@
+/* header.css */
+
+.header {
+    background: url('/img/wallGBlurred.png') no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    border: 14px outset #333333a5;
+}
+
+.navbar {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    border: 2px solid #ffffff7a;
+    background-color: #333333a5;
+}
+
+.navbar-title {
+    font-size: 30px;
+    font-family: 'MuseoSans-900';
+    text-decoration: none;
+}
+
+.navbar-categories {
+    display: flex;
+    align-items: center;
+}
+
+.navRoutes {
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+}

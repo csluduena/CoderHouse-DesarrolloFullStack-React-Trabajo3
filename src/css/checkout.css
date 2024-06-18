@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 200px); /* Ajusta según el tamaño de tu navbar y footer */
+    min-height: calc(100vh - 200px); 
 }
 
 .checkout-form {

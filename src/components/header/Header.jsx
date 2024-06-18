@@ -1,10 +1,8 @@
-import React from 'react'
-import { NavBar } from './NavBar'
-import { CartWidget } from './CartWidget'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { NavBar } from './NavBar';
+import '../../css/header.css'; // Import the CSS for the header
 
 export const Header = () => {
-
     return (
         <header className="header">
             <NavBar />

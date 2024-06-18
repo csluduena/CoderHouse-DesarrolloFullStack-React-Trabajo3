@@ -7,6 +7,7 @@ const FloatingCart = () => {
     const { calcularCantidad } = useContext(CartContext);
     const location = useLocation();
 
+    // Verifica si la ubicación actual es '/carrito'
     if (location.pathname === '/carrito') {
         return null;
     }
@@ -15,11 +16,20 @@ const FloatingCart = () => {
         return null;
     }
 
+    const cantidadProductos = calcularCantidad();
+
     return (
         <div className="floating-cart">
             <a href="/carrito">
                 <div className="groupHo">
-                    <h1 className='checkO'>Check Out</h1>
+                    <h1 className='checkO'>
+                        Check Out
+                        {cantidadProductos > 0 && (
+                            <span className="product-count">
+                                &nbsp;x{cantidadProductos}
+                            </span>
+                        )}
+                    </h1>
                     <img
                         src="/img/carritoICO.png"
                         alt="Shopping Cart"

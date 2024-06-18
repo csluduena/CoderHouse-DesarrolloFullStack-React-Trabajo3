@@ -1,15 +1,30 @@
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import categories from "../data/categorias.json";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase/config";
+import '../css/footer.css';
 
 const Footer = () => {
+    let [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        const categoriasRef = collection(db, "categorias");
+        getDocs(categoriasRef)
+            .then((res) => {
+                setCategories(res.docs.map((doc) => {
+                    return { id: doc.id, ...doc.data() }
+                }));
+            })
+    }, [])
+
     return (
-        <footer style={{ backgroundColor: '#333', color: 'white', padding: '20px', textAlign: 'center' }}>
+        <footer className="footer">
             <div>
-                <NavLink to="/" style={{ fontSize: '30px', margin: '0 10px', color: 'white', textDecoration: 'none', fontFamily: "MuseoSans-900" }}>
+                <NavLink to="/" className="footer-nav-link">
                     GuitarStore
                 </NavLink>
-                {categories.map(categoria => (
-                    <NavLink key={categoria.id} to={`/category/${categoria.id}`} style={{ fontSize: '30px', margin: '0 10px', color: 'white', textDecoration: 'none', fontFamily: "MuseoSans-900" }}>
+                {categories.map((categoria) => (
+                    <NavLink key={categoria.id} to={`/category/${categoria.id}`} className="footer-nav-link">
                         {categoria.nombre}
                     </NavLink>
                 ))}
