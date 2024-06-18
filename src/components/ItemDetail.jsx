@@ -22,8 +22,7 @@ export const ItemDetail = ({ producto }) => {
             <img className='imgCfg' src={producto.imagen} />
             <p className='priceCFG'>Price ${producto.precio}</p>
             <p className='productDesCFG'>{producto.descripcion}</p>
-            <button className='botonBuy' onClick={handleBuyNow}>¡Buy Now!</button>
-            <button onClick={() => agregarAlCarrito(producto)}>Add to Cart</button>
+            <button className='add2Cart' onClick={() => { handleBuyNow(); agregarAlCarrito(producto); }}>Add to Cart</button>
             <div className="popup-container">
                 {messages.map((message, index) => (
                     <div key={message.id} className="popup" style={{ bottom: `${20 + index * 60}px` }}>
