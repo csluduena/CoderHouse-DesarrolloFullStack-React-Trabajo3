@@ -1,17 +1,23 @@
-import React, { useContext } from 'react';
+import { useEffect, useContext, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../css/floatingCart.css';
 import { CartContext } from '../context/CartContext';
+import { Link } from 'react-router-dom';
 
 const FloatingCart = () => {
     const { calcularCantidad } = useContext(CartContext);
     const location = useLocation();
+    const [isVisible, setIsVisible] = useState(true);
 
-    if (location.pathname === '/cart') {
-        return null;
-    }
+    useEffect(() => {
+        if (location.pathname === '/cart' || calcularCantidad() === 0) {
+            setIsVisible(false);
+        } else {
+            setIsVisible(true);
+        }
+    }, [location.pathname, calcularCantidad]);
 
-    if (calcularCantidad() === 0) {
+    if (!isVisible) {
         return null;
     }
 
@@ -19,7 +25,7 @@ const FloatingCart = () => {
 
     return (
         <div className="floating-cart">
-            <a href="/cart">
+            <Link to="/cart">
                 <div className="groupHo">
                     <h1 className='checkO'>
                         Check Out
@@ -37,7 +43,7 @@ const FloatingCart = () => {
                         onMouseOut={(e) => (e.currentTarget.src = '/img/carritoICO.png')}
                     />
                 </div>
-            </a>
+            </Link>
         </div>
     );
 }
