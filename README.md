@@ -54,7 +54,7 @@ Este proyecto está desplegado en [Netlify](https://guitarstore-react.netlify.ap
 
 Carlos Sebastián Ludueña
 
-Este proyecto fue realizado como parte del curso de **Desarrollo Full Stack** en **CoderHouse**.
+Este proyecto fue realizado como entrega final para el curso **React JS**, que corresponde a la carrera de **Desarrollo Full Stack** en **CoderHouse**.
 
 Puedes encontrarme en:
 
