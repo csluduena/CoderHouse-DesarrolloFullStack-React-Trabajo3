@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import '../css/cart.css';
 
 const Carrito = () => {
-    const { carrito, calcularTotal, vaciarCarrito, eliminarProducto } = useContext(CartContext)
-    
+    const { carrito, calcularTotal, vaciarCarrito, eliminarProducto, incrementarProducto, decrementarProducto } = useContext(CartContext);
+
     const contarCantidad = (prod) => {
         return carrito.reduce((acc, item) => {
             return item.id === prod.id ? acc + 1 : acc;
@@ -16,11 +16,9 @@ const Carrito = () => {
         const uniqueProducts = Array.from(new Set(carrito.map(prod => prod.id)));
         return uniqueProducts.map(id => {
             const producto = carrito.find(prod => prod.id === id);
-            const cantidad = contarCantidad(producto);
-            const total = cantidad * producto.precio;
+            const total = producto.cantidad * producto.precio;
             return {
                 ...producto,
-                cantidad,
                 total
             };
         });
@@ -35,6 +33,10 @@ const Carrito = () => {
                             <h1 className="producto-precio">{prod.nombre} x {prod.cantidad}u: ${prod.total}</h1>
                             <button className="delete-button" onClick={() => { eliminarProducto(prod) }}>Remove {prod.cantidad}❌</button>
                             <img src={prod.imagen} alt={prod.nombre} className="producto-imagen" />
+                            <div className="cantidad-modificar">
+                                <button className="producto-cantidad-modificar" onClick={() => { decrementarProducto(prod) }}>Remove 1 Item</button>
+                                <button className="producto-cantidad-modificar" onClick={() => { incrementarProducto(prod) }}>Add 1 Item</button>
+                            </div>
                         </div>
                     </Fragment>
                 )
