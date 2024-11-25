@@ -42,7 +42,7 @@ Este es el proyecto final de React.js realizado por **Sebastián Ludueña** como
 
 1. Clonar el repositorio:
     ```bash```
-    ```git clone https://github.com/csluduena/CoderHouse-DesarrolloFullStack-React-Trabajo2```
+    ```git clone https://github.com/csluduena/CoderHouse-DesarrolloFullStack-React-Trabajo3```
 2. Instalar las dependencias:
     ```npm install```
 3. Iniciar la aplicación:
